@@ -3,15 +3,25 @@ body {
     color: #fff;
 }
 
-div {
+.wrapper {
+    width: 220px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portrait, #landscape {
     width: 100px;
     height: 100px;
     border: 6px solid #e74c3c;
-    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+     
 }
+
+
 
 .mobiles, .tablets, .desktops, .large-desktops, .x-large-desktops {
     visibility: hidden;
@@ -20,29 +30,92 @@ div {
 
 /*  MEDIA QUERIES   */
 
-@media all and (max-width: 400px) {
-    body {background-color: #16a085;}
-    .mobiles {visibility: visible;}
+/*Portrait*/
+
+@media all 
+        and (max-width: 400px)
+        and (orientation: portrait) {
+            body {background-color: #16a085;}
+            .mobiles {visibility: visible;}
+            #landscape {visibility: hidden;}
 }
 
-@media all and (min-width: 401px) and (max-width: 600px) {
-    body {background-color: #f1c40f;}
-    .tablets {visibility: visible;}
-
+@media all 
+        and (min-width: 401px)
+        and (max-width: 600px)
+        and (orientation: portrait) {
+            body {background-color: #f1c40f;}
+            .tablets {visibility: visible;}
+            #landscape {visibility: hidden;} 
 }
 
-@media all and (min-width: 601px) and (max-width: 800px) {
-    body {background: #9b59b6; }
-    .desktops {visibility: visible;}
-
+@media all 
+        and (min-width: 601px) 
+        and (max-width: 800px)
+        and (orientation: portrait) {
+            body {background: #9b59b6;}
+            .desktops {visibility: visible;}
+            #landscape {visibility: hidden;}
 }
 
-@media all and (min-width: 801px) and (max-width: 1200px) {
-    body {background-color: #e67e22;}
-    .large-desktops {visibility: visible;}
+@media all 
+        and (min-width: 801px)
+        and (max-width: 1200px)
+        and (orientation: portrait) {
+            body {background-color: #e67e22;}
+            .large-desktops {visibility: visible;}
+            #landscape {visibility: hidden;}
 }
 
-@media all and (min-width: 1201px) {
-    body {background-color: #3498db;}
-    .x-large-desktops {visibility: visible;}
+@media all 
+        and (min-width: 1201px)
+        and (orientation: portrait) {
+            body {background-color: #3498db;}
+            .x-large-desktops {visibility: visible;}
+            #landscape {visibility: hidden;}
 }
+
+/*Landscape*/
+@media all 
+        and (max-width: 400px)
+        and (orientation: landscape) {
+            body {background-color: #16a085;}
+            .mobiles {visibility: visible;}
+            #portrait {visibility: hidden;}
+}
+
+@media all 
+        and (min-width: 401px)
+        and (max-width: 600px)
+        and (orientation: landscape) {
+            body {background-color: #f1c40f;}
+            .tablets {visibility: visible;}
+            #portrait {visibility: hidden;} 
+}
+
+@media all 
+        and (min-width: 601px) 
+        and (max-width: 800px)
+        and (orientation: landscape) {
+            body {background: #9b59b6;}
+            .desktops {visibility: visible;}
+            #portrait {visibility: hidden;}
+}
+
+@media all 
+        and (min-width: 801px)
+        and (max-width: 1200px)
+        and (orientation: landscape) {
+            body {background-color: #e67e22;}
+            .large-desktops {visibility: visible;}
+            #portrait {visibility: hidden;}
+}
+
+@media all 
+        and (min-width: 1201px)
+        and (orientation: landscape) {
+            body {background-color: #3498db;}
+            .x-large-desktops {visibility: visible;}
+            #portrait {visibility: hidden;}
+}
+
