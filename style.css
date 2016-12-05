@@ -1,7 +1,6 @@
 body {
-    background: #16a085;
     font-family: "Open Sans";
-    color: white;
+    color: #fff;
 }
 
 div {
@@ -14,3 +13,36 @@ div {
     align-items: center; 
 }
 
+.mobiles, .tablets, .desktops, .large-desktops, .x-large-desktops {
+    visibility: hidden;
+}
+
+
+/*  MEDIA QUERIES   */
+
+@media all and (max-width: 400px) {
+    body {background-color: #16a085;}
+    .mobiles {visibility: visible;}
+}
+
+@media all and (min-width: 401px) and (max-width: 600px) {
+    body {background-color: #f1c40f;}
+    .tablets {visibility: visible;}
+
+}
+
+@media all and (min-width: 601px) and (max-width: 800px) {
+    body {background: #9b59b6; }
+    .desktops {visibility: visible;}
+
+}
+
+@media all and (min-width: 801px) and (max-width: 1200px) {
+    body {background-color: #e67e22;}
+    .large-desktops {visibility: visible;}
+}
+
+@media all and (min-width: 1201px) {
+    body {background-color: #3498db;}
+    .x-large-desktops {visibility: visible;}
+}
