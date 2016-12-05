@@ -24,7 +24,7 @@ body {
 
 
 .mobiles, .tablets, .desktops, .large-desktops, .x-large-desktops {
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -36,7 +36,7 @@ body {
         and (max-width: 400px)
         and (orientation: portrait) {
             body {background-color: #16a085;}
-            .mobiles {visibility: visible;}
+            .mobiles {display: block;}
             #landscape {visibility: hidden;}
 }
 
@@ -45,7 +45,7 @@ body {
         and (max-width: 600px)
         and (orientation: portrait) {
             body {background-color: #f1c40f;}
-            .tablets {visibility: visible;}
+            .tablets {display: block;}
             #landscape {visibility: hidden;} 
 }
 
@@ -54,7 +54,7 @@ body {
         and (max-width: 800px)
         and (orientation: portrait) {
             body {background: #9b59b6;}
-            .desktops {visibility: visible;}
+            .desktops {display: block;}
             #landscape {visibility: hidden;}
 }
 
@@ -63,7 +63,7 @@ body {
         and (max-width: 1200px)
         and (orientation: portrait) {
             body {background-color: #e67e22;}
-            .large-desktops {visibility: visible;}
+            .large-desktops {display: block;}
             #landscape {visibility: hidden;}
 }
 
@@ -71,7 +71,7 @@ body {
         and (min-width: 1201px)
         and (orientation: portrait) {
             body {background-color: #3498db;}
-            .x-large-desktops {visibility: visible;}
+            .x-large-desktops {display: block;}
             #landscape {visibility: hidden;}
 }
 
@@ -80,7 +80,7 @@ body {
         and (max-width: 400px)
         and (orientation: landscape) {
             body {background-color: #16a085;}
-            .mobiles {visibility: visible;}
+            .mobiles {display: block;}
             #portrait {visibility: hidden;}
 }
 
@@ -89,7 +89,7 @@ body {
         and (max-width: 600px)
         and (orientation: landscape) {
             body {background-color: #f1c40f;}
-            .tablets {visibility: visible;}
+            .tablets {display: block;}
             #portrait {visibility: hidden;} 
 }
 
@@ -98,7 +98,7 @@ body {
         and (max-width: 800px)
         and (orientation: landscape) {
             body {background: #9b59b6;}
-            .desktops {visibility: visible;}
+            .desktops {display: block;}
             #portrait {visibility: hidden;}
 }
 
@@ -107,7 +107,7 @@ body {
         and (max-width: 1200px)
         and (orientation: landscape) {
             body {background-color: #e67e22;}
-            .large-desktops {visibility: visible;}
+            .large-desktops {display: block;}
             #portrait {visibility: hidden;}
 }
 
@@ -115,7 +115,7 @@ body {
         and (min-width: 1201px)
         and (orientation: landscape) {
             body {background-color: #3498db;}
-            .x-large-desktops {visibility: visible;}
+            .x-large-desktops {display: block;}
             #portrait {visibility: hidden;}
 }
 
